@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:layout_weight="7">
+
+        <com.example.colorpaint.PaintView
+            android:id="@+id/paintView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/brushButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:clickable="true"
+                android:onClick="toggleButtonOverlay"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/ic_color_settings_24px" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/brushButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/brushButton"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:clickable="true"
+                android:onClick="setMarker"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/ic_marker_24px" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/brushButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toStartOf="@id/brushButton"
+                android:backgroundTint="@color/colorPrimary"
+                android:clickable="true"
+                android:onClick="setPen"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/ic_brush_24px" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/brushButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/brushButton"
+                android:layout_toStartOf="@id/brushButton"
+                android:backgroundTint="@color/colorPrimary"
+                android:clickable="true"
+                android:onClick="setPencil"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/ic_pencil_24px" />
+
+            <LinearLayout
+                android:id="@+id/sliderLayout"
+                android:layout_width="40dp"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:layout_margin="10dp"
+                android:background="@color/paletteWhite"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true">
+
+                <SeekBar
+                    android:id="@+id/sizeBar"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:max="100"
+                    android:min="15"
+                    android:progressTint="@color/colorPrimaryDark"
+                    android:rotation="-90"
+                    android:thumbTint="@color/colorPrimary"
+                    android:tickMarkTint="@color/colorPrimary"
+                    android:translationX="-80dp"
+                    android:translationY="-100dp" />
+
+                <TextView
+                    android:id="@+id/sizeLabel"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Size"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/paletteLayout"
+                layout="@layout/palette_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

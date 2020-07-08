@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/paletteWhite"
+    android:columnCount="2">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteGreen"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteGreenDark"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteBlue"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteBlueDark"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/palettePurple"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/palettePurpleDark"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteRed"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteRedDark"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteBrown"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteBrownDark"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteYellow"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteYellowDark"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteWhite"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteWhiteDark"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteBlack"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tintMode="src_over"
+        android:tint="@color/paletteBlackDark"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+</GridLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.colorpaint.MainActivity">
+
+    <item android:id="@+id/undo_button"
+        android:icon="@drawable/ic_undo_24px"
+        android:title="Undo"
+        app:showAsAction="always"
+        android:onClick="undo"/>
+
+    <item android:id="@+id/redo_button"
+        android:icon="@drawable/ic_redo_24px"
+        android:title="Redo"
+        app:showAsAction="always"
+        android:onClick="redo"/>
+
+   <item android:id="@+id/trash_button"
+        android:icon="@drawable/ic_delete_24px"
+        android:title="Start Over"
+        app:showAsAction="always"
+        android:onClick="clear"/>
+
+    <item android:id="@+id/save_button"
+        android:icon="@drawable/ic_save_alt_24px"
+        android:title="Save"
+        app:showAsAction="always"
+        android:onClick="save"/>
+
+</menu>

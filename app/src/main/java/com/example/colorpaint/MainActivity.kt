@@ -193,8 +193,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun saveAs(title: String) {
         val mediaValues = ContentValues()
-        mediaValues.put(MediaStore.Images.Media.TITLE, title)
-        mediaValues.put(MediaStore.Images.Media.DISPLAY_NAME, title)
+        mediaValues.put(MediaStore.Images.Media.TITLE, "$title.jpg")
+        mediaValues.put(MediaStore.Images.Media.DISPLAY_NAME, "$title.jpg")
         mediaValues.put(MediaStore.Images.Media.MIME_TYPE, "image/jpg")
         val time = System.currentTimeMillis() / 1000
         mediaValues.put(MediaStore.Images.Media.DATE_ADDED, time)
